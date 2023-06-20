@@ -15,7 +15,7 @@ This contains the primary code files for generating the tiered, directed network
 **GraphSI(G)**: Function for assigning nodes as infected in a graph produced by AdjustableNetwork.  Argument graph must have nodes with "Port" type.
   1. G: A graph produced using AdjustableNetwork
 
-**InfectedList**:  Script for assigning and storing infected status of all graphs in a population produced using NetworkList.  Uses GraphSI on each graph.  Produces a matrix that stores each graphs infection status as a column vector
+**InfectedList**:  Script for assigning and storing infected status of all graphs in a population produced using NetworkList.  Uses GraphSI on each graph.  Produces a matrix that stores each graphs infection status as a column vector.  Additionally, identifies a non-Port node in each graph to be used as the graph's initial focus for all analysis.
 
 
 
