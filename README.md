@@ -15,5 +15,14 @@ AdjustableNetwork(num_nodes,goal_density,num_ports)
 NetworkList
   Script for producing and storing a population of networks produced with AdjustableNetwork
 
+GraphSI(G)
+  Function for assigning nodes as infected in a graph produced by AdjustableNetwork.  Argument graph must have nodes with "Port" type.
+    -G - a graph
+
+InfectedList
+  Script for assigning and storing infected status of all graphs in a population produced using NetworkList.  Uses GraphSI on each graph.  Produces a matrix that stores each graphs infection status as a column vector
+
+
+
 
   
