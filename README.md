@@ -17,6 +17,13 @@ This contains the primary code files for generating the tiered, directed network
 
 **InfectedList**:  Script for assigning and storing infected status of all graphs in a population produced using NetworkList.  Uses GraphSI on each graph.  Produces a matrix that stores each graphs infection status as a column vector.  Additionally, identifies a non-Port node in each graph to be used as the graph's initial focus for all analysis.
 
+**CategorizeTemp(G,CND,focus_idx)**: Function for assigning equivalence class categories to nodes in a 2-neighborhood of an identified focus node.  Use the original graph and closed neighborhood to properly identify the necessary subgraph.
+  1. G: A graph produced using AdjustableNetwork
+  2. CND: The list of nodes included in the 2-neighborhood being categorized
+  3. focus_idx: The focus of the 2-neighborhood being categorized
+
+**
+
 
 
 
